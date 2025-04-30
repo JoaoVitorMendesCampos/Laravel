@@ -29,6 +29,8 @@
 
                     <th>Descrição</th>
 
+                    <th>Hoje</th>
+
                 </tr>
 
             </thead>
