@@ -29,6 +29,8 @@
 
                     <th>Descrição</th>
 
+                    <th>Ações</th>
+
                 </tr>
 
             </thead>
@@ -46,6 +48,30 @@
                         <td>{{ $livro->ano_publicacao }}</td>
 
                         <td>{{ $livro->descricao }}</td>
+
+                        <td>
+
+                        <form action="/livros/editar" method="post">
+
+                            @csrf
+
+                            <input type="hidden" name="id" value="{{ $livro->id }}">
+
+                            <button type="submit">Editar</button>
+
+                        </form>
+
+                        <form action="/livros/deletar" method="post">
+
+                            @csrf
+
+                            <input type="hidden" name="id" value="{{ $livro->id }}">
+
+                            <button type="submit">Deletar</button>
+
+                        </form>
+
+                        </td>
 
                     </tr>
 

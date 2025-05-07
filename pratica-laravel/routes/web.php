@@ -13,4 +13,10 @@ Route::get('/livros', [LivroController::class, 'exibirLivros']);
 
 Route::get('/livros/criar', [LivroController::class, 'criarLivro']);
 
-Route::post('/livros/criar', [LivroController::class, 'armazenarLivro']);
+Route::post('/livros/armazenar', [LivroController::class, 'armazenarLivro']);
+
+Route::post('/livros/editar', [LivroController::class, 'editarLivro']);
+
+Route::post('/livros/atualizar', [LivroController::class, 'atualizarLivro']);
+
+Route::post('/livros/deletar', [LivroController::class, 'deletarLivro']);
