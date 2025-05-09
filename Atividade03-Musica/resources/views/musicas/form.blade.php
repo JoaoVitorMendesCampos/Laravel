@@ -30,7 +30,7 @@
 
     <label for="album">Album:</label><br>
 
-    <input type="number" id="album" name="album" value="{{ $musica->album ?? '' }}"
+    <input type="text" id="album" name="album" value="{{ $musica->album ?? '' }}"
 
         required>
 
