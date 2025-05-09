@@ -1,18 +1,25 @@
 <?php
 
+
+use App\Http\Controllers\MusicaController;
+
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 Route::get('/', function () {
-    return view('welcome');
+
+    return view('index');
+
 });
+
+Route::get('/musicas', [MusicaController::class, 'exibirmusicas']);
+
+Route::get('/musicas/criar', [MusicaController::class, 'criarMusica']);
+
+Route::post('/musicas/armazenar', [MusicaController::class, 'armazenarMusica']);
+
+Route::post('/musicas/editar', [MusicaController::class, 'editarMusica']);
+
+Route::post('/musicas/atualizar', [MusicaController::class, 'atualizarMusica']);
+
+Route::post('/musicas/deletar', [MusicaController::class, 'deletarMusica']);
