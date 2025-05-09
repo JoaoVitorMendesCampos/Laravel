@@ -13,7 +13,7 @@
 
 
 
-    @if (count($Musicas) > 0)
+    @if (count($musicas) > 0)
 
     <table border="1">
 
@@ -41,7 +41,7 @@
 
 <tbody>
 
-    @foreach ($Musicas as $musica)
+    @foreach ($musicas as $musica)
 
         <tr>
 
