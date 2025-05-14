@@ -10,7 +10,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Prática Laravel</title>
+    <title>Prática 10Laravel</title>
 
     @vite(['resources/css/app.css'])
 
