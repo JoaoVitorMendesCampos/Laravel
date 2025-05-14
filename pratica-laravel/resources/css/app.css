@@ -21,6 +21,10 @@
     border-radius: 8px;
     margin-bottom: 20px;
   }
+
+  header h2{
+    color: #f2f2f2;
+  }
   
   .home-link {
     color: white;
