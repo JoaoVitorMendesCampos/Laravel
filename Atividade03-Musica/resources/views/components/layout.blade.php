@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Spotify</title>
+    @vite(['resources/css/app.css'])
 
 </head>
 
