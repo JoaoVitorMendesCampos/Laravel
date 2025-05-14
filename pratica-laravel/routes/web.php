@@ -24,7 +24,7 @@ Route::post('/livros/deletar', [LivroController::class, 'deletarLivro'])->middle
 
 
 
-Route::get('/login', [LoginController::class, 'digitarLogin']);
+Route::get('/login', [LoginController::class, 'digitarLogin'])->name('login');
 
 Route::post('/login', [LoginController::class, 'login']);
 
