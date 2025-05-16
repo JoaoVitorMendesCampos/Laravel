@@ -16,9 +16,9 @@
 
         <ul>
 
-            <li><a href="/livros">Lista</a></li>
+            <li><a href="/musicas">Lista</a></li>
 
-            <li><a href="/livros/criar">Novo</a></li>
+            <li><a href="/musicas/criar">Novo</a></li>
 
         </ul>
 
