@@ -47,6 +47,10 @@
     margin: 20px auto;
     max-width: 800px;
   }
+
+  header h2{
+    color: #f1f1f1;
+  }
   
   /* Link para Home (se estiver fora da navbar) */
   .home-link {
