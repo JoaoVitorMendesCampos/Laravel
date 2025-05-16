@@ -1,18 +1,43 @@
-
-
 <nav>
+
     <div>
-        <h2>Livros</h2> 
 
-        <ul> 
+        <a href="/">
 
-            <li><a href="/musicas">Lista de musicas</a></li> 
+            <h2>Home</h2>
 
-            <li><a href="/musicas/criar">Nova musica</a></li> 
+        </a>
 
-        </ul> 
+    </div>
 
-    </div> 
+    <div>
 
-</nav> 
+        <h2>Clientes</h2>
 
+        <ul>
+
+            <li><a href="/livros">Lista</a></li>
+
+            <li><a href="/livros/criar">Novo</a></li>
+
+        </ul>
+
+    </div>
+
+    <div>
+
+        @auth
+
+            <h2>Olá, {{ Auth::user()->name }}</h2>
+
+            <a href="/logout">Logout</a>
+
+        @else
+
+            <a href="/login">Login</a>
+
+        @endauth
+
+    </div>
+
+</nav>
